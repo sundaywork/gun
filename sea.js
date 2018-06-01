@@ -1347,7 +1347,7 @@
   })(USE, './create');
 
   ;USE(function(module){
-    const Gun = (typeof window !== 'undefined' ? window : global).Gun || USE('gun/gun')
+    const Gun = (typeof window !== 'undefined' ? window : global).Gun || USE('gun/gun') || require('gun/gun')
     const SEA = USE('./sea')
     // After we have a GUN extension to make user registration/login easy, we then need to handle everything else.
 
